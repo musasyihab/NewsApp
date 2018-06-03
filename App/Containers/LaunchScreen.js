@@ -6,6 +6,10 @@ import { Images } from '../Themes'
 import styles from './Styles/LaunchScreenStyles'
 
 export default class LaunchScreen extends Component {
+  static navigationOptions = {
+    title: 'Launch Screen',
+    /* No more header config here! */
+  };
   render () {
     return (
       <View style={styles.mainContainer}>

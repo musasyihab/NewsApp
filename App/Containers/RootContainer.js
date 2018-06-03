@@ -3,9 +3,11 @@ import { View, StatusBar } from 'react-native'
 import ReduxNavigation from '../Navigation/ReduxNavigation'
 import { connect } from 'react-redux'
 import StartupActions from '../Redux/StartupRedux'
+import SourceListScreen from '../Containers/SourceListScreen'
 
 // Styles
 import styles from './Styles/RootContainerStyles'
+import { Colors } from '../Themes';
 
 class RootContainer extends Component {
   componentDidMount () {
@@ -15,7 +17,10 @@ class RootContainer extends Component {
   render () {
     return (
       <View style={styles.applicationView}>
-        <StatusBar barStyle='light-content' />
+        <StatusBar
+          barStyle='light-content'
+          backgroundColor={Colors.darkPrimary}
+        />
         <ReduxNavigation />
       </View>
     )

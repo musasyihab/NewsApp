@@ -1,5 +1,12 @@
 const colors = {
-  background: '#1F0808',
+  background: '#dedede',
+  darkPrimary: '#0288D1',
+  lightPrimary: '#B3E5FC',
+  primary: '#03A9F4',
+  accent: '#8BC34A',
+  primaryText: '#212121',
+  secondaryText: '#757575',
+  divider: '#e0e0e0',
   clear: 'rgba(0,0,0,0)',
   facebook: '#3b5998',
   transparent: 'rgba(0,0,0,0)',
@@ -21,7 +28,8 @@ const colors = {
   eggplant: '#251a34',
   border: '#483F53',
   banner: '#5F3E63',
-  text: '#E0D7E5'
+  text: '#E0D7E5',
+  white: '#ffffff'
 }
 
 export default colors
