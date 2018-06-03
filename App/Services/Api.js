@@ -2,7 +2,7 @@
 import apisauce from 'apisauce';
 
 import Constants from '../Constants/Constants';
-import { API_KEY } from '../Constants/PrivateConstants';
+import Secrets from 'react-native-config'
 
 const BASE_URL = 'https://newsapi.org/v2';
 
@@ -16,7 +16,7 @@ const create = (baseURL = BASE_URL) => {
     // here are some default headers
     headers: {
       'Cache-Control': 'no-cache',
-      'X-Api-Key': API_KEY
+      'X-Api-Key': Secrets.API_KEY
     },
     // 30 second timeout...
     timeout: 30000
